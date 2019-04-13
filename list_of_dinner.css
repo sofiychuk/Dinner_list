@@ -1,0 +1,83 @@
+*{
+    transition: all .4s ease-in;
+}
+body{
+    background-color: #383d43;
+    margin: 0px;
+}
+header{
+    background-color: #494e55;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+h1{
+    margin: 0px;
+    color: #ec7f80;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+p{
+    margin: 0px;
+    color: #ec7f80;
+    font-size: 25px;
+}
+li{
+    color: #ffffff;
+    list-style: none;
+    width: 60%;
+    height: 62px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    border: 2px solid transparent;
+    border-width: 2px 0;
+}
+li:nth-child(2n){
+    background-color: #7b7694;
+}
+li:nth-child(2n+1){
+    background-color: #89849f;
+}
+p:only-child{
+    background-color: #494e55;
+    width: 58.9%;
+    height: 70px;
+    margin-left: 21.7%;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 27px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 29px;
+    
+}
+input[type="checkbox"]{
+    transform:scale(2);
+    opacity:0.9;
+    cursor:pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container input:checked~.checkmark  {
+    text-decoration: line-through;
+    color: #a0a1b7;
+}
+li:hover{
+    background-color: #625d77;
+    border-color: #fff;
+}
+p:only-child:hover::before,
+p:only-child:hover::after{
+    content: url(http://flukeout.github.io/favicon.png);
+    background-image: url(http://flukeout.github.io/favicon.png);
+}
+p:only-child::before{
+    margin-right: 15px;
+}
+p:only-child::after{
+    margin-left: 15px;
+}
